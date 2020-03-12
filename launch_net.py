@@ -28,6 +28,7 @@ from topo_3rr_3 import BGPTopo3RR3
 from topo_med import MedBGPTopo
 from topo_te_1 import BGPTopoTE1
 from topo_te_2 import BGPTopoTE2
+from esib_topo import ESIBTopo
 
 import argparse
 
@@ -53,7 +54,8 @@ TOPOS = {'simple_bgp_network': SimpleBGPTopo,
          'topo_3rr_1': BGPTopo3RR1,
          'topo_3rr_2': BGPTopo3RR2,
          'topo_3rr_3': BGPTopo3RR3,
-         'topo_te_2': BGPTopoTE2
+         'topo_te_2': BGPTopoTE2,
+	 "esib_topo": ESIBTopo
          }
 
 

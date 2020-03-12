@@ -1,7 +1,7 @@
 from ipmininet.iptopo import IPTopo
 from ipmininet.router.config import BGP, ebgp_session, AF_INET6
 
-class SimpleBGPTopoAS(IPTopo):
+class ESIBTopo(IPTopo):
 
     def build(self, *args, **kwargs):
 
@@ -82,7 +82,7 @@ class SimpleBGPTopoAS(IPTopo):
         ebgp_session(self, as2r2, as1r2)
         ebgp_session(self, as2r3, as1r3)
 
-        super(SimpleBGPTopoAS, self).build(*args, **kwargs)
+        super(ESIBTopo, self).build(*args, **kwargs)
 
     def bgp(self, name):
         r = self.addRouter(name)
